@@ -1,0 +1,130 @@
+#+title: Gralhix OSINT 23
+
+[[https://gralhix.com/list-of-osint-exercises/osint-exercise-023/][Link to the original exercise]]
+
+* Solution
+:PROPERTIES:
+:CREATED:  [2024-11-23 Sat 23:24]
+:END:
+
+- The title of the illustration is "[[https://www.artstation.com/artwork/lRwWNJ][Involuntary Rat Queen]]" by Adam
+  Scythe.
+
+- Creating a similar piece would cost at least $190, as per [[https://www.deviantart.com/adamscythe/journal/Commission-Info-789285042][the
+  artist's commission info]].
+
+* Log
+:PROPERTIES:
+:CREATED:  [2024-11-23 Sat 23:14]
+:END:
+
+- I started by browsing [[https://www.youtube.com/@gralhix/videos][Sofia's videos]] on YouTube, looking for a video
+  posted in October 2023. As I was solving this exercise on
+  2024-11-23, I looked for the "1 year ago" indicator. Just give us a
+  date, Google...
+
+  See "Itches" below for an alternative to doing this manually.
+
+- The [[https://www.youtube.com/watch?v=z9gr8yRSPZg][first video]] I clicked on was the right one; however, I also
+  checked the [[https://www.youtube.com/watch?v=V-3tpJl7ktg][previous]] and [[https://www.youtube.com/watch?v=2MBUM8C6hX4][next]] videos' date just to be sure: August
+  2023 and November 2023.
+
+- I spotted the wallpaper between 3'37 and 3'38. I used the =.=
+  shortcut to navigate frame by frame after pausing the video --
+  source [[https://web.archive.org/web/20241123223711/https://support.google.com/youtube/answer/7631406?hl=en][here]]. Here is the [[https://github.com/alecigne/my-utils/blob/master/screenshot.bash][partial screenshot]] I took:
+
+  #+caption: The screenshot of the wallpaper.
+  [[file:data/20241123_222710_screenshot.png]]
+
+  This made me consider how to extract the best possible quality from
+  that frame. Also, the YouTube player is visible during pause, which
+  is annoying. See below for a solution :)
+
+- I used Google Images to do a reverse image search and found:
+
+  + [[https://www.inprnt.com/gallery/adamscythe/involuntary-rat-queen/][This link]], which provides the title and author of the
+    illustration.
+
+  + [[https://www.reddit.com/r/gameDevClassifieds/comments/1bevgh0/for_hire_2d_artist_available_for_full/][This Reddit thread]], in which the author provided a link to their
+    [[https://www.deviantart.com/adamscythe/journal/Commission-Info-789285042][commission info]].
+
+- On the latter:
+
+  #+begin_quote
+  4. Complete Illustration (character plus background): starts at $190
+     (depends on the details)
+  #+end_quote
+
+- In conclusion, the illustration is titled 'Involuntary Rat Queen' by
+  Adam Scythe, and creating a similar piece would cost at least $190.
+
+* Itches
+:PROPERTIES:
+:CREATED:  [2024-11-23 Sat 23:21]
+:END:
+
+** Finding the right video
+:PROPERTIES:
+:CREATED:  [2024-11-23 Sat 23:21]
+:END:
+
+It's not possible to display a timestamp from the channel videos using
+[[https://www.tampermonkey.net/][Tampermonkey]] for example, since YouTube is not simply converting a
+given date to a "relative" format. The upload date is not in the
+channel page at all, only in the invidual video pages.
+
+However, since this "1 year ago" thing could have been very annoying
+if there were a lot of videos in the channel, I still wanted a more
+general solution.
+
+Using [[https://github.com/yt-dlp/yt-dlp][yt-dlp]], it's possible to get the upload date of a particular
+video:
+
+#+begin_src sh :results output code
+  yt-dlp --print upload_date "https://www.youtube.com/watch?v=z9gr8yRSPZg"
+#+end_src
+
+#+begin_src sh
+20231024
+#+end_src
+
+It's also possible to display all video IDs of a given channel:
+
+#+begin_src sh :results output code
+  yt-dlp --flat-playlist --print id https://www.youtube.com/@gralhix/videos | wc -l
+#+end_src
+
+#+begin_src sh
+71
+#+end_src
+
+(I piped the output into =wc= to avoid displaying a long list here. To
+date there are 71 videos on Sofia's channel.)
+
+So I know I could theoretically write a program that would loop over
+all the videos (or do some kind of bisection), retrieve their upload
+date, and stop when there's a match. Maybe I'd have to rate limit it
+to avoid being blocked by YouTube, but at least I could do something
+else while the program is running 😄
+
+** Extracting the frame in the best possible quality
+:PROPERTIES:
+:CREATED:  [2024-11-23 Sat 23:48]
+:END:
+
+To download the video in the best available quality (without sound):
+
+#+begin_src sh
+  yt-dlp -f bestvideo "https://www.youtube.com/watch?v=z9gr8yRSPZg"
+#+end_src
+
+To extract all frames as lossless PNG between two timestamps:
+
+#+begin_src sh
+  ffmpeg -ss 3:37.500 -to 3:38.500 -i video.webm frame_%04d.png
+#+end_src
+
+The frame:
+
+#+caption: The frame containing the wallpaper.
+[[file:data/frame_0019.png]]

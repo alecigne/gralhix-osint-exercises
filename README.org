@@ -1,3 +1,28 @@
-#+title: Solutions to Sofia Santos' OSINT exercises
+#+title: Solutions to Sofia Santos' (Gralhix) OSINT exercises
 
-https://gralhix.com/list-of-osint-exercises/
+[[https://gralhix.com/list-of-osint-exercises/][Link to the original exercises]]
+
+My goal is to solve the exercises, but also scratch all itches I get
+during the process. These itches are scratched in the... "Itches"
+sections of the solutions below 😄
+
+This repository is a network of [[https://orgmode.org/][Org mode]] files best viewed in [[https://www.gnu.org/software/emacs/][Emacs]],
+but is browsable as-is on GitHub.
+
+* Solutions
+:PROPERTIES:
+:CREATED:  [2024-11-23 Sat 23:00]
+:END:
+
+Note that I'm coming up with these names, don't try to look them up 🙂
+
+- [[file:023/][023]] :: More Than Meets The Eye -- solved on 2024-11-23.
+
+** Upcoming reports
+:PROPERTIES:
+:CREATED:  [2024-11-24 Sun 01:45]
+:END:
+
+- [[file:006/][006]] :: Reality Check -- solved on 2024-11-22.
+
+- [[file:021/][021]] :: Cocoardinates -- solved on 2024-11-23.
