@@ -1,0 +1,3 @@
+#+title: Solutions to Sofia Santos' OSINT exercises
+
+https://gralhix.com/list-of-osint-exercises/
