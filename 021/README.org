@@ -1,3 +1,73 @@
 #+title: Gralhix OSINT 021
 
-TODO
+[[https://gralhix.com/list-of-osint-exercises/osint-exercise-021/][Link to the original exercise]]
+
+* Solution
+:PROPERTIES:
+:CREATED:  [2024-11-24 Sun 23:35]
+:END:
+
+The coordinates are: 41.35242908473371, -4.690351935061442. Check it
+on Google Maps [[https://maps.app.goo.gl/NDyKaELGRQQMUYV57][here]] (the south is on top).
+
+* Log
+:PROPERTIES:
+:CREATED:  [2024-11-24 Sun 23:36]
+:END:
+
+- I noticed the "Do it right" writing on the chocolate and I ran this
+  Google search:
+
+  #+begin_quote
+  "do it right" "chocolate"
+  #+end_quote
+
+- The first result was:
+
+  #+caption: The very first Google result.
+  [[file:data/20241124_234131_screenshot.png]]
+
+- So I immediately searched for "puchero valladolid" in Google Maps
+  and had a match.
+
+  #+caption: The general area of the match.
+  [[file:data/20241124_234454_screenshot.png]]
+
+- I recognized the trees that follow the [[https://en.wikipedia.org/wiki/Eresma_River][Eresma River]] from the
+  original map, which is actually "upside down" (South on
+  top). Rotating the map in Google Maps:
+
+  #+caption: After rotating the map.
+  [[file:data/20241124_235333_screenshot.png]]
+
+- The coordinates are: 41.35242908473371, -4.690351935061442.
+
+** Bonus
+:PROPERTIES:
+:CREATED:  [2024-11-25 Mon 00:01]
+:END:
+
+I realized later that the map is also [[https://somospuchero.com/en/contact/][on Puchero's website]].
+
+* Itches
+:PROPERTIES:
+:CREATED:  [2024-11-24 Sun 23:56]
+:END:
+
+I like [[https://xkcd.com/426/][Geohashing]], as introduced by xkcd. Basically, it's a playful
+algorithm for generating random daily coordinates. It combines the
+date with the day's Dow Jones opening value, takes the MD5 hash of the
+combination, convert the hexadecimal to decimal to create seemingly
+random but reproducible decimal coordinates within a given
+latitude/longitude region. The idea is for people to meet at these
+coordinates for exploration or social gatherings. It is a very fun
+motivation for spontaneous adventure! There's even a entire [[https://geohashing.site/][wiki]]
+dedicated to the activity with all kinds of challenges: camping at a
+geohash, reaching it at midnight, etc.
+
+After this exercise, I wondered what could be the closest geohash to
+have landed near our target area since the "invention" of
+Geohashing. To check this, I used the [[http://geohashing-shotgun.appspot.com/index/index.html][Geohashing Shotgun]] application
+that displays all geohashes in a given area for a given period. And
+the winner is: [[https://geohashing.info/t:map/2014-12-10/g:41.6,-4.7/c:41.353,-4.695/z:15][2014-12-10_44_-1]]! At the time of this writeup, 10 years
+ago in a few days 🙂🎄

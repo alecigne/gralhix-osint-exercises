@@ -16,6 +16,8 @@ but is browsable as-is on GitHub.
 
 Note that I'm coming up with these names, don't try to look them up 🙂
 
+- [[file:021/][021]] :: Cocoardinates -- solved on 2024-11-23.
+
 - [[file:023/][023]] :: More Than Meets The Eye -- solved on 2024-11-23.
 
 ** Upcoming reports
@@ -24,5 +26,3 @@ Note that I'm coming up with these names, don't try to look them up 🙂
 :END:
 
 - [[file:006/][006]] :: Reality Check -- solved on 2024-11-22.
-
-- [[file:021/][021]] :: Cocoardinates -- solved on 2024-11-23.
