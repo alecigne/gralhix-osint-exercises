@@ -1,4 +1,4 @@
-#+title: Gralhix OSINT 23
+#+title: Gralhix OSINT 23 -- More Than Meets The Eye
 
 [[https://gralhix.com/list-of-osint-exercises/osint-exercise-023/][Link to the original exercise]]
 
