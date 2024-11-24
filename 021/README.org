@@ -1,4 +1,4 @@
-#+title: Gralhix OSINT 021
+#+title: Gralhix OSINT 021 -- Cocoardinates
 
 [[https://gralhix.com/list-of-osint-exercises/osint-exercise-021/][Link to the original exercise]]
 

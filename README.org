@@ -16,9 +16,13 @@ but is browsable as-is on GitHub.
 
 Note that I'm coming up with these names, don't try to look them up 🙂
 
-- [[file:021/][021]] :: Cocoardinates -- solved on 2024-11-23.
-
-- [[file:023/][023]] :: More Than Meets The Eye -- solved on 2024-11-23.
+|------+-------------------------+-----------------+------------------|
+| Ex # | Name                    | Level (beg/exp) | Solved on        |
+|------+-------------------------+-----------------+------------------|
+|  [[file:021/][021]] | Cocoardinates           | Easy/easy       | [2024-11-23 Sat] |
+|------+-------------------------+-----------------+------------------|
+|  [[file:023/][023]] | More Than Meets The Eye | Easy/easy       | [2024-11-23 Sat] |
+|------+-------------------------+-----------------+------------------|
 
 ** Upcoming reports
 :PROPERTIES:
