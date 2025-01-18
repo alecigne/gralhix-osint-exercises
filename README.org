@@ -6,8 +6,9 @@ My goal is to solve the exercises, but also scratch all itches I get
 during the process. These itches are scratched in the... "Itches"
 sections of the solutions below 😄
 
-This repository is a network of [[https://orgmode.org/][Org mode]] files best viewed in [[https://www.gnu.org/software/emacs/][Emacs]],
-but is browsable as-is on GitHub.
+This project is available on [[https://github.com/alecigne/gralhix-osint-exercises][GitHub]] as well as on my [[https://lecigne.net/projects/gralhix-osint-exercises/README.html][website]]. If
+you're on GitHub right now, it might be more comfortable for you to
+browse it on my website
 
 * Solutions
 :PROPERTIES:
@@ -19,14 +20,21 @@ Note that I'm coming up with these names, don't try to look them up 🙂
 |------+-------------------------+-----------------+------------------|
 | Ex # | Name                    | Level (beg/exp) | Solved on        |
 |------+-------------------------+-----------------+------------------|
-|  [[file:021/][021]] | Cocoardinates           | Easy/easy       | [2024-11-23 Sat] |
+|  [[file:021/README.org][021]] | Cocoardinates           | Easy/easy       | [2024-11-23 Sat] |
 |------+-------------------------+-----------------+------------------|
-|  [[file:023/][023]] | More Than Meets The Eye | Easy/easy       | [2024-11-23 Sat] |
+|  [[file:023/README.org][023]] | More Than Meets The Eye | Easy/easy       | [2024-11-23 Sat] |
 |------+-------------------------+-----------------+------------------|
 
-** Upcoming reports
+* Upcoming reports
 :PROPERTIES:
 :CREATED:  [2024-11-24 Sun 01:45]
 :END:
 
-- [[file:006/][006]] :: Reality Check -- solved on 2024-11-22.
+- [[file:006/README.org][006]] :: Reality Check -- solved on 2024-11-22.
+
+* Config                                                           :noexport:
+:PROPERTIES:
+:CREATED:  [2025-01-19 Sun 00:04]
+:END:
+
+#+options: num:nil toc:nil

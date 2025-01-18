@@ -33,6 +33,7 @@
   shortcut to navigate frame by frame after pausing the video --
   source [[https://web.archive.org/web/20241123223711/https://support.google.com/youtube/answer/7631406?hl=en][here]]. Here is the [[https://github.com/alecigne/my-utils/blob/master/screenshot.bash][partial screenshot]] I took:
 
+  #+attr_html: :width 600 :style border:2px solid black;
   #+caption: The screenshot of the wallpaper.
   [[file:data/20241123_222710_screenshot.png]]
 
@@ -126,5 +127,13 @@ To extract all frames as lossless PNG between two timestamps:
 
 The frame:
 
+#+attr_html: :width 600 :style border:2px solid black;
 #+caption: The frame containing the wallpaper.
 [[file:data/frame_0019.png]]
+
+* Config                                                           :noexport:
+:PROPERTIES:
+:CREATED:  [2025-01-19 Sun 00:04]
+:END:
+
+#+options: num:nil toc:nil

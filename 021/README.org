@@ -24,12 +24,14 @@ on Google Maps [[https://maps.app.goo.gl/NDyKaELGRQQMUYV57][here]] (the south is
 
 - The first result was:
 
+  #+attr_html: :width 600 :style border:2px solid black;
   #+caption: The very first Google result.
   [[file:data/20241124_234131_screenshot.png]]
 
 - So I immediately searched for "puchero valladolid" in Google Maps
   and had a match.
 
+  #+attr_html: :width 600 :style border:2px solid black;
   #+caption: The general area of the match.
   [[file:data/20241124_234454_screenshot.png]]
 
@@ -37,6 +39,7 @@ on Google Maps [[https://maps.app.goo.gl/NDyKaELGRQQMUYV57][here]] (the south is
   original map, which is actually "upside down" (South on
   top). Rotating the map in Google Maps:
 
+  #+attr_html: :width 600 :style border:2px solid black;
   #+caption: After rotating the map.
   [[file:data/20241124_235333_screenshot.png]]
 
@@ -71,3 +74,10 @@ Geohashing. To check this, I used the [[http://geohashing-shotgun.appspot.com/in
 that displays all geohashes in a given area for a given period. And
 the winner is: [[https://geohashing.info/t:map/2014-12-10/g:41.6,-4.7/c:41.353,-4.695/z:15][2014-12-10_44_-1]]! At the time of this writeup, 10 years
 ago in a few days 🙂🎄
+
+* Config                                                           :noexport:
+:PROPERTIES:
+:CREATED:  [2025-01-19 Sun 00:04]
+:END:
+
+#+options: num:nil toc:nil

@@ -1,3 +1,10 @@
 #+title: Gralhix OSINT 006
 
 TODO
+
+* Config                                                           :noexport:
+:PROPERTIES:
+:CREATED:  [2025-01-19 Sun 00:04]
+:END:
+
+#+options: num:nil toc:nil
